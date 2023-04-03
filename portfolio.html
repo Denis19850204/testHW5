@@ -10,6 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -19,7 +26,7 @@
     <header class="header">
       <div class="container header-flex">
         <nav class="header-nav">
-          <a class="logo" href="./index.html"></a>
+          <a class="logo" href="./index.html">
             <span class="logo-accent">Web</span>
             Studio
           </a>
@@ -29,7 +36,7 @@
               <a class="nav-link" href="./index.html">Студія</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./portfolio.html">Портфоліо</a>
+              <a class="nav-link current-page" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="nav-item"><a class="nav-link" href="">Контакти</a></li>
           </ul>
@@ -83,12 +90,22 @@
           <ul class="project-list">
             <li class="project-list-item">
               <a class="project-link" href="">
-                <img
-                  class="project-image"
-                  src="./images/works/img1.jpg"
-                  alt="Ноутбук"
-                  width="370"
-                />
+                <div class="project-thumb">
+                  <img
+                    class="project-image"
+                    src="./images/works/img1.jpg"
+                    alt="Ноутбук"
+                    width="370"
+                  />
+                  <div class="project-overlay">
+                    <p class="project-overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+
                 <div class="project-info">
                   <h2 class="project-subtitle">Технокряк</h2>
                   <p class="project-text">Веб-сайт</p>
@@ -98,12 +115,22 @@
 
             <li class="project-list-item">
               <a class="project-link" href="">
-                <img
-                  class="project-image"
-                  src="./images/works/img2.jpg"
-                  alt="Постер"
-                  width="370"
-                />
+                <div class="project-thumb">
+                  <img
+                    class="project-image"
+                    src="./images/works/img2.jpg"
+                    alt="Постер"
+                    width="370"
+                  />
+
+                  <div class="project-overlay">
+                    <p class="project-overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
                 <div class="project-info">
                   <h2 class="project-subtitle">
                     Постер
@@ -116,12 +143,22 @@
 
             <li class="project-list-item">
               <a class="project-link" href="">
-                <img
-                  class="project-image"
-                  src="./images/works/img3.jpg"
-                  alt="Ресторан"
-                  width="370"
-                />
+                <div class="project-thumb">
+                  <img
+                    class="project-image"
+                    src="./images/works/img3.jpg"
+                    alt="Ресторан"
+                    width="370"
+                  />
+
+                  <div class="project-overlay">
+                    <p class="project-overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
                 <div class="project-info">
                   <h2 class="project-subtitle">
                     Ресторан
@@ -134,12 +171,22 @@
 
             <li class="project-list-item">
               <a class="project-link" href="">
-                <img
-                  class="project-image"
-                  src="./images/works/img4.jpg"
-                  alt="Навушники"
-                  width="370"
-                />
+                <div class="project-thumb">
+                  <img
+                    class="project-image"
+                    src="./images/works/img4.jpg"
+                    alt="Навушники"
+                    width="370"
+                  />
+
+                  <div class="project-overlay">
+                    <p class="project-overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
                 <div class="project-info">
                   <h2 class="project-subtitle">
                     Проєкт
@@ -152,12 +199,22 @@
 
             <li class="project-list-item">
               <a class="project-link" href="">
-                <img
-                  class="project-image"
-                  src="./images/works/img5.jpg"
-                  alt="коробки"
-                  width="370"
-                />
+                <div class="project-thumb">
+                  <img
+                    class="project-image"
+                    src="./images/works/img5.jpg"
+                    alt="коробки"
+                    width="370"
+                  />
+
+                  <div class="project-overlay">
+                    <p class="project-overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
                 <div class="project-info">
                   <h2 class="project-subtitle">
                     Проєкт
@@ -170,16 +227,24 @@
 
             <li class="project-list-item">
               <a class="project-link" href="">
-                <img
-                  class="project-image"
-                  src="./images/works/img6.jpg"
-                  alt="Монітор"
-                  width="370"
-                />
+                <div class="project-thumb">
+                  <img
+                    class="project-image"
+                    src="./images/works/img6.jpg"
+                    alt="Монітор"
+                    width="370"
+                  />
+
+                  <div class="project-overlay">
+                    <p class="project-overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
                 <div class="project-info">
-                  <h2 class="project-subtitle" lang="en">
-                    Inspiration has no Borders
-                  </h2>
+                  <h2 class="project-subtitle" lang="en">Inspiration has no Borders</h2>
                   <p class="project-text">Веб-сайт</p>
                 </div>
               </a>
@@ -187,12 +252,22 @@
 
             <li class="project-list-item">
               <a class="project-link" href="">
-                <img
-                  class="project-image"
-                  src="./images/works/img7.jpg"
-                  alt="Книга"
-                  width="370"
-                />
+                <div class="project-thumb">
+                  <img
+                    class="project-image"
+                    src="./images/works/img7.jpg"
+                    alt="Книга"
+                    width="370"
+                  />
+
+                  <div class="project-overlay">
+                    <p class="project-overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
                 <div class="project-info">
                   <h2 class="project-subtitle">
                     Видання
@@ -205,12 +280,22 @@
 
             <li class="project-list-item">
               <a class="project-link" href="">
-                <img
-                  class="project-image"
-                  src="./images/works/img8.jpg"
-                  alt="Лейба"
-                  width="370"
-                />
+                <div class="project-thumb">
+                  <img
+                    class="project-image"
+                    src="./images/works/img8.jpg"
+                    alt="Лейба"
+                    width="370"
+                  />
+
+                  <div class="project-overlay">
+                    <p class="project-overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
                 <div class="project-info">
                   <h2 class="project-subtitle">
                     Проєкт
@@ -223,12 +308,22 @@
 
             <li class="project-list-item">
               <a class="project-link" href="">
-                <img
-                  class="project-image"
-                  src="./images/works/img9.jpg"
-                  alt="Ноутбук"
-                  width="370"
-                />
+                <div class="project-thumb">
+                  <img
+                    class="project-image"
+                    src="./images/works/img9.jpg"
+                    alt="Ноутбук"
+                    width="370"
+                  />
+
+                  <div class="project-overlay">
+                    <p class="project-overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
                 <div class="project-info">
                   <h2 class="project-subtitle" lang="en">Growing Business</h2>
                   <p class="project-text">Додаток</p>
@@ -253,15 +348,10 @@
             <address class="footer-address">
               <span class="footer-street">м. Київ, пр-т Лесі Українки, 26</span>
 
-              <a
-                class="footer-link footer-mail"
-                href="mailto:info@devstudio.com"
-              >
+              <a class="footer-link footer-mail" href="mailto:info@devstudio.com">
                 info@devstudio.com
               </a>
-              <a class="footer-link" href="tel:+380961111111">
-                +38 096 111 11 11
-              </a>
+              <a class="footer-link" href="tel:+380961111111">+38 096 111 11 11</a>
             </address>
           </div>
 

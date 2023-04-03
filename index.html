@@ -17,6 +17,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -26,17 +30,21 @@
     <header class="header">
       <div class="container header-flex">
         <nav class="header-nav">
-          <a class="logo" href="./index.html"></a>
+          <a class="logo" href="./index.html">
             <span class="logo-accent">Web</span>
             Studio
           </a>
 
           <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="">Студія</a></li>
+            <li class="nav-item">
+              <a class="nav-link current-page" href="">Студія</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="">Контакти</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Контакти</a>
+            </li>
           </ul>
         </nav>
 
@@ -66,12 +74,12 @@
       <!-- Основна секція -->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">
+          <h1 class="hero-title animate__animated animate__shakeY">
             Ефективні рішення для
             <br />
             вашого бізнесу
           </h1>
-          <button class="hero-btn" type="button">Замовити послугу</button>
+          <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -88,8 +96,7 @@
               </div>
               <h3 class="benefits-subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="benefits-text">
-                Ідейні міркування, і навіть початок повсякденної роботи з
-                формування позиції.
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
             <li class="benefits-item">
@@ -100,8 +107,7 @@
               </div>
               <h3 class="benefits-subtitle">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="benefits-text">
-                Завдання організації, особливо рамки і місце навчання кадрів
-                тягне у себе.
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
             <li class="benefits-item">
@@ -123,8 +129,7 @@
               </div>
               <h3 class="benefits-subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="benefits-text">
-                Значимість цих проблем настільки очевидна, що реалізація
-                планових завдань.
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
           </ul>
@@ -136,18 +141,17 @@
         <div class="container">
           <h2 class="work-title">Чим ми займаємося</h2>
           <ul class="work-list">
-            <li>
+            <li class="work-item">
               <img src="./images/benefits/box1.jpg" alt="ПК" width="370" />
+              <p class="work-text">Десктопні додатки</p>
             </li>
-            <li>
-              <img
-                src="./images/benefits/box2.jpg"
-                alt="Мобільний"
-                width="370"
-              />
+            <li class="work-item">
+              <img src="./images/benefits/box2.jpg" alt="Мобільний" width="370" />
+              <p class="work-text">Мобільні додатки</p>
             </li>
-            <li>
+            <li class="work-item">
               <img src="./images/benefits/box3.jpg" alt="Лаптоп" width="370" />
+              <p class="work-text">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -159,12 +163,7 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img
-                class="team-photo"
-                src="./images/team/img1.jpg"
-                alt="Дизайнер"
-                width="270"
-              />
+              <img class="team-photo" src="./images/team/img1.jpg" alt="Дизайнер" width="270" />
               <h3 class="team-subtitle">Ігор Дем'яненко</h3>
               <p class="team-text" lang="en">Product Designer</p>
 
@@ -203,12 +202,7 @@
               </ul>
             </li>
             <li class="team-item">
-              <img
-                class="team-photo"
-                src="./images/team/img2.jpg"
-                alt="Розробник"
-                width="270"
-              />
+              <img class="team-photo" src="./images/team/img2.jpg" alt="Розробник" width="270" />
               <h3 class="team-subtitle">Ольга Рєпіна</h3>
               <p class="team-text" lang="en">Frontend Developer</p>
               <ul class="team-social-list">
@@ -246,12 +240,7 @@
               </ul>
             </li>
             <li class="team-item">
-              <img
-                class="team-photo"
-                src="./images/team/img3.jpg"
-                alt="Менеджер"
-                width="270"
-              />
+              <img class="team-photo" src="./images/team/img3.jpg" alt="Менеджер" width="270" />
               <h3 class="team-subtitle">Микола Тарасов</h3>
               <p class="team-text" lang="en">Marketing</p>
               <ul class="team-social-list">
@@ -289,12 +278,7 @@
               </ul>
             </li>
             <li class="team-item">
-              <img
-                class="team-photo"
-                src="./images/team/img4.jpg"
-                alt="Дизайнер"
-                width="270"
-              />
+              <img class="team-photo" src="./images/team/img4.jpg" alt="Дизайнер" width="270" />
               <h3 class="team-subtitle">Михайло Єрмаков</h3>
               <p class="team-text" lang="en">UI Designer</p>
               <ul class="team-social-list">
@@ -405,15 +389,10 @@
             <address class="footer-address">
               <span class="footer-street">м. Київ, пр-т Лесі Українки, 26</span>
 
-              <a
-                class="footer-link footer-mail"
-                href="mailto:info@devstudio.com"
-              >
+              <a class="footer-link footer-mail" href="mailto:info@devstudio.com">
                 info@devstudio.com
               </a>
-              <a class="footer-link" href="tel:+380961111111">
-                +38 096 111 11 11
-              </a>
+              <a class="footer-link" href="tel:+380961111111">+38 096 111 11 11</a>
             </address>
           </div>
 
@@ -456,5 +435,19 @@
         </div>
       </div>
     </footer>
+
+    <!-- Модальне вікно -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./modal.js"></script>
   </body>
 </html>
