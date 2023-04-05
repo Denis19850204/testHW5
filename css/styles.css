@@ -222,9 +222,16 @@ ul {
 }
 
 .hero-btn {
-  display: inline-block;
-  padding: 10px 32px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
   min-width: 216px;
+
+  padding: 10px 10px;
+  margin-left: auto;
+  margin-right: auto;
+
   border-radius: 4px;
   border: transparent;
 
@@ -240,11 +247,57 @@ ul {
   letter-spacing: 0.06em;
 
   transition: background-color 250ms var(--transition-timing-function);
+
+  overflow: hidden;
+
+  animation: pulse;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #188ce8;
+}
+
+.hero-btn::before {
+  content: "";
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+
+  margin-right: 10px;
+
+  background-image: url(../images//slightly.svg);
+  background-size: contain;
+
+  transition: transform 250ms var(--transition-timing-function);
+}
+
+.hero-btn:hover::before {
+  transform: translateY(-140%);
+}
+
+.hero-btn::after {
+  position: absolute;
+  top: 50%;
+  left: 13px;
+
+  content: "";
+  display: inline-flex;
+  width: 25px;
+  height: 25px;
+
+  transform: translateY(calc(-50% + 40px));
+
+  background-image: url(../images/upside.svg);
+  background-size: contain;
+
+  transition: transform 250ms var(--transition-timing-function);
+}
+
+.hero-btn:hover::after {
+  transform: translateY(-50%);
 }
 
 /* Секція переваги */
@@ -359,6 +412,12 @@ ul {
   text-align: center;
   box-shadow: 0px 4px 4px 0px #00000040;
   border-radius: 4px;
+
+  transition: transform 500ms var(--transition-timing-function);
+}
+
+.team-item:hover {
+  transform: scale(1.1);
 }
 
 .team-photo {
@@ -453,6 +512,12 @@ ul {
 
 .clients-icon {
   fill: currentColor;
+
+  transition: transform 1000ms var(--transition-timing-function);
+}
+
+.clients-link:hover .clients-icon {
+  transform: perspective(600px) rotateY(180deg);
 }
 
 .clients-link:hover,
@@ -554,12 +619,14 @@ ul {
   background-color: #ffffff1a;
   color: var(--white-color);
 
-  transition: background-color 250ms var(--transition-timing-function);
+  transition: background-color 250ms var(--transition-timing-function),
+    transform 500ms var(--transition-timing-function);
 }
 
 .footer-block-social-link:hover,
 .footer-block-social-link:focus {
   background-color: var(--brand-color);
+  transform: rotate(360deg);
 }
 
 .footer-block-social-icon {
@@ -568,6 +635,7 @@ ul {
 
 /* ------------------------------------------------------------ */
 /* Портфоліо */
+
 .project {
   padding: 94px 0;
 }
@@ -603,13 +671,14 @@ ul {
   letter-spacing: 0.03em;
 
   transition: background-color 250ms var(--transition-timing-function),
-    color 250ms var(--transition-timing-function);
+    color 250ms var(--transition-timing-function), transform 500ms var(--transition-timing-function);
 }
 
 .project-btn:hover,
 .project-btn:focus {
   background-color: var(--brand-color);
   color: var(--white-color);
+  transform: scale(1.1);
 }
 
 .project-list {
@@ -711,12 +780,18 @@ ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
 
   height: 528px;
   width: 581px;
 
   background-color: var(--white-color);
+
+  transition: transform 500ms var(--transition-timing-function);
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.7);
 }
 
 .modal-btn {
